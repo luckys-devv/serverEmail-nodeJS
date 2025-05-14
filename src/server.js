@@ -5,6 +5,7 @@ const app = express();
 const mailRoutes = require('./routes/mailRoutes.js');
 
 app.use(express.json());
+// Endpoint -> /v1/mail/send
 app.use('/v1/mail', mailRoutes);
 
 const port = process.env.port || 3000;

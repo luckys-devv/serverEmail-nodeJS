@@ -1,6 +1,7 @@
 require('dotenv').config();
 const nodeMailer = require('nodemailer');
 
+// Configuracion que solicita el protocolo SMTP de google.
 const transportCredentials = nodeMailer.createTransport({
     host: process.env.SMTP_HOST,
     port: process.env.SMTP_PORT,
